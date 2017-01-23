@@ -5,8 +5,8 @@
 var board = [];
 
 for (var i = 0; i < 3; i++) {
-    board.push(Array(3).fill(null));
-  }
+  board.push(Array(3).fill(null));
+}
 
 console.log(board);
 
