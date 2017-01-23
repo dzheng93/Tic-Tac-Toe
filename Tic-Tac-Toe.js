@@ -1,8 +1,15 @@
+var rowConflict = function() {
+  for (var i = 0; i < board.length; i++) {
+
+  }
+}
+
 
 var startGame = function() {
   // instantiate board with all null's, meaning none are placed yet
   // o === o
   // x === x
+  var winner;
   var finished = false;
   var currentPlayer = player1;
   var board = [];
@@ -29,7 +36,8 @@ var startGame = function() {
       console.log('Board status - ', board);
       continue;
     }
-
-  // check for row/column/diagonal conflicts for o's & x's to see if there is a winner after each turn.
+    // check for row/column/diagonal conflicts for o's & x's to see if there is a winner after each turn.
+      // if any conflicts, set finished === true; return player as winner.
   }
+  alert(`We have a winner, congrats ${winner}!!`);
 };
